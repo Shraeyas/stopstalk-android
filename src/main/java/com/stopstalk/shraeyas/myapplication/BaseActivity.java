@@ -23,6 +23,9 @@ import android.widget.TextView;
 public class BaseActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -113,7 +116,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == 1)
         {
-            getSupportActionBar().setTitle("Profile Page");
+            getSupportActionBar().setTitle("Login");
             Login create = new Login(this);
         }
 
