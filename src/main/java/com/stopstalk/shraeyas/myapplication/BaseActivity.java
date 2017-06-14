@@ -38,7 +38,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Will open Leaderboard (Proposed for now!!)", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -51,6 +51,9 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Splash splash = new Splash(this);
+        CreateMenu menu = new CreateMenu(this);
 
 
     }
@@ -102,32 +105,27 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera)
+        if (id == 2)
         {
             Leaderboard create = new Leaderboard(this);
         }
 
-        else if (id == R.id.nav_gallery)
+        else if (id == 1)
+        {
+            Login create = new Login(this);
+        }
+
+        else if (id == 3)
         {
 
         }
 
-        else if (id == R.id.nav_slideshow)
+        else if (id == 4)
         {
 
         }
 
-        else if (id == R.id.nav_manage)
-        {
-
-        }
-
-        else if (id == R.id.nav_share)
-        {
-
-        }
-
-        else if (id == R.id.nav_send)
+        else if (id == 5)
         {
 
         }

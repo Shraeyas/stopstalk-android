@@ -22,6 +22,8 @@ public class Leaderboard extends AppCompatActivity
     public Leaderboard(Activity activity)
     {
         RelativeLayout relativeLayout = (RelativeLayout)activity.findViewById(R.id.content_main);
+        relativeLayout.removeAllViews();
+
         ViewStub stub = new ViewStub(activity);
 
         relativeLayout.addView(stub);
