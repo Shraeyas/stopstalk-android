@@ -43,6 +43,9 @@ public class Leaderboard extends AppCompatActivity
             tv = new TextView(activity);
             tv.setText("\n");
             tableRow.addView(tv);
+            if(i%2 == 1)
+            tableRow.setBackgroundColor(Color.LTGRAY);
+
             tableLayout.addView(tableRow);
 
             tableRow = new TableRow(activity);
@@ -54,7 +57,7 @@ public class Leaderboard extends AppCompatActivity
 
 
             tv = new TextView(activity);
-            tv.setText("Shreyas Singh\n\n@Shraeyas");
+            tv.setText("Shreyas Singh\n\n@Shraeyas\n\n");
             tableRow.addView(tv);
 
 
@@ -76,7 +79,13 @@ public class Leaderboard extends AppCompatActivity
             tableRow.addView(tv);
 
 
+            if(i%2 == 1)
+            tableRow.setBackgroundColor(Color.LTGRAY);
+
+
             tableLayout.addView(tableRow);
+
+
         }
     }
 
@@ -90,34 +99,42 @@ public class Leaderboard extends AppCompatActivity
         tv = new TextView(activity);
         tv.setText("\n\n   #");
         tv.setWidth(res.pxtodp(60));
-
+        tv.setTextSize(15);
+        tv.setTextColor(Color.WHITE);
         tableRow.addView(tv);
 
         tv = new TextView(activity);
         tv.setText("\n\nName\nHandle");
         tv.setWidth(res.pxtodp(200));
+        tv.setTextSize(15);
+        tv.setTextColor(Color.WHITE);
         tableRow.addView(tv);
 
 
         tv = new TextView(activity);
         tv.setText("\n\nCountry");
         tv.setWidth(res.pxtodp(150));
+        tv.setTextSize(15);
+        tv.setTextColor(Color.WHITE);
         tableRow.addView(tv);
 
 
         tv = new TextView(activity);
         tv.setText("\n\nInstitute");
         tv.setWidth(res.pxtodp(230));
+        tv.setTextSize(15);
+        tv.setTextColor(Color.WHITE);
         tableRow.addView(tv);
 
 
         tv = new TextView(activity);
-        tv.setText("\nRating\nChanges\nPer Day\n");
+        tv.setText("\nRating/\nChanges/\nPer Day\n");
         tv.setWidth(res.pxtodp(200));
+        tv.setTextSize(15);
+        tv.setTextColor(Color.WHITE);
         tableRow.addView(tv);
 
-        tableRow.setBackgroundColor(Color.LTGRAY);
-
+        tableRow.setBackgroundColor(Color.BLACK);
 
         tableLayout.addView(tableRow);
 

@@ -13,6 +13,7 @@ public class Login extends AppCompatActivity
 {
     public Login(Activity activity)
     {
+
         RelativeLayout relativeLayout = (RelativeLayout)activity.findViewById(R.id.content_main);
         relativeLayout.removeAllViews();
 

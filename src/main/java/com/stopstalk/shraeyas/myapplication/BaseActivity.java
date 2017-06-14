@@ -107,11 +107,13 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == 2)
         {
+            getSupportActionBar().setTitle("Leaderboard");
             Leaderboard create = new Leaderboard(this);
         }
 
         else if (id == 1)
         {
+            getSupportActionBar().setTitle("Profile Page");
             Login create = new Login(this);
         }
 
