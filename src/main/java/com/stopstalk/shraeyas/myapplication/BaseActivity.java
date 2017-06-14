@@ -36,16 +36,6 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Will open Leaderboard (Proposed for now!!)", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -122,7 +112,8 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
         else if (id == 3)
         {
-
+            getSupportActionBar().setTitle("User");
+            Profile create = new Profile(this);
         }
 
         else if (id == 4)
